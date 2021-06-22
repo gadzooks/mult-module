@@ -90,7 +90,7 @@ local.properties
 # Windows image file caches
 Thumbs.db
 
-# Folder config file
+# Folder com.github.gadzooks.multmodule.config file
 Desktop.ini
 
 ######################
