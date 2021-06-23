@@ -2,11 +2,13 @@ package com.github.gadzooks.multmodule.service;
 
 import com.github.gadzooks.multmodule.domain.MyJpaEntity;
 import com.github.gadzooks.multmodule.repository.MyJpaEntityRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CrudServiceImpl<T, ID> implements CrudService<MyJpaEntity, Long> {
+@Service
+public class CrudServiceImpl implements CrudService<MyJpaEntity, Long> {
     private final MyJpaEntityRepository repository;
 
     public CrudServiceImpl(MyJpaEntityRepository repository) {
